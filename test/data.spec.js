@@ -1,23 +1,32 @@
-import { example, anotherExample } from '../src/data.js';
+import { listaDePeliculas } from "../src/data";
 
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe("listaDePeliculas", () => {
+  it("is a function", () => {
+    expect(typeof listaDePeliculas).toBe("function");
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it("returns `lista de peliculas`", () => {
+    let peliculas = [
+      "Castle in the Sky",
+      "My Neighbor Totoro",
+      "Kiki's Delivery Service",
+      "Grave of the Fireflies",
+      "Only Yesterday",
+      "Porco Rosso",
+      "Pom Poko",
+      "Whisper of the Heart",
+      "Princess Mononoke",
+      "My Neighbors the Yamadas",
+      "Spirited Away",
+      "The Cat Returns",
+      "Howl's Moving Castle",
+      "Tales from Earthsea",
+      "Ponyo on the Cliff by the Sea",
+      "The Secret World of Arrietty",
+      "From Up on Poppy Hill",
+      "The Wind Rises",
+      "The Tale of the Princess Kaguya",
+      "When Marnie Was There",
+    ];
+    expect(listaDePeliculas()).toStrictEqual(peliculas);
   });
 });
