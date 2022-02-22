@@ -4,6 +4,7 @@
 .flex-container {
   display: flex;
   flex-basis: 100px;
+  font-size: 1rem;
 }
 header {
   width: auto;
@@ -36,4 +37,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
+}
+.centrar_contenido {
+  text-align: center;
 }
