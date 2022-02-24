@@ -7,3 +7,21 @@ export function listaDePeliculas() {
   }
   return peliculas;
 }
+
+export function datosDePeliculas() {
+  let datosPeliculas = [];
+  for (let i = 0; i < data["films"].length; i++) {
+    datosPeliculas.push(
+      "Release date:" +
+        data["films"][i]["release_date"] +
+        " " +
+        "Director:" +
+        data["films"][i]["director"] +
+        " " +
+        "Score:" +
+        data["films"][i]["rt_score"]
+    );
+  }
+  console.log(datosPeliculas);
+  return datosPeliculas;
+}
