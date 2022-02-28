@@ -18,15 +18,5 @@ export function datosDePeliculas() {
     });
   }
 
-  /*let filtroDeFechas = data["films"];
-
-  function filterFilms(filtroDeFechas) {
-    if (filtroDeFechas["release_date"] > "1990") return true;
-    else {
-    }
-  }
-  const filterFilmsFinal = filtroDeFechas.filter(filterFilms);
-  console.log(filterFilmsFinal); */
-  //console.log(datosPeliculas);
   return datosPeliculas;
 }

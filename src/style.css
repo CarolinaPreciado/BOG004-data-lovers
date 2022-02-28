@@ -1,6 +1,9 @@
 * {
   font-family: "Glory", sans-serif;
 }
+body {
+  margin: 0%;
+}
 .flex-container {
   display: flex;
   flex-basis: 100px;
