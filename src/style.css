@@ -1,6 +1,9 @@
 * {
   font-family: "Glory", sans-serif;
 }
+body {
+  margin: 0%;
+}
 .flex-container {
   display: flex;
   flex-basis: 100px;
@@ -40,4 +43,25 @@ h2 {
 }
 .centrar_contenido {
   text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.contenedorDeFecha {
+  float: left;
+  font-weight: bolder;
+  text-align: center;
+  color: #c6c191;
+  font-size: 1.17em;
+}
+.contenedorDeDirector {
+  display: inline-block;
+  font-weight: bolder;
+  color: #c6c191;
+  font-size: 1.17em;
+}
+.contenedorPuntaje {
+  float: right;
+  font-weight: bolder;
+  color: #c6c191;
+  font-size: 1.17em;
 }

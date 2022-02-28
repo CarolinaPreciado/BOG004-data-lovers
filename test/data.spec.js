@@ -1,4 +1,5 @@
-import { listaDePeliculas } from "../src/data";
+import { describe } from "eslint/lib/rule-tester/rule-tester";
+import { listaDePeliculas, datosDePeliculas } from "../src/data";
 
 describe("listaDePeliculas", () => {
   it("is a function", () => {
@@ -28,5 +29,14 @@ describe("listaDePeliculas", () => {
       "When Marnie Was There",
     ];
     expect(listaDePeliculas()).toStrictEqual(peliculas);
+  });
+});
+
+describe("datosDePeliculas", () => {
+  it("is a function", () => {
+    expect(typeof datosDePeliculas).toBe("function");
+  });
+  it("returns `datosDePeliculas`", () => {
+    expect(typeof datosDePeliculas()).toBe("object");
   });
 });
