@@ -11,17 +11,22 @@ export function listaDePeliculas() {
 export function datosDePeliculas() {
   let datosPeliculas = [];
   for (let i = 0; i < data["films"].length; i++) {
-    datosPeliculas.push(
-      "Release date:" +
-        data["films"][i]["release_date"] +
-        " " +
-        "Director:" +
-        data["films"][i]["director"] +
-        " " +
-        "Score:" +
-        data["films"][i]["rt_score"]
-    );
+    datosPeliculas.push({
+      release_date: data["films"][i]["release_date"],
+      director: data["films"][i]["director"],
+      rt_score: data["films"][i]["rt_score"],
+    });
   }
-  console.log(datosPeliculas);
+
+  /*let filtroDeFechas = data["films"];
+
+  function filterFilms(filtroDeFechas) {
+    if (filtroDeFechas["release_date"] > "1990") return true;
+    else {
+    }
+  }
+  const filterFilmsFinal = filtroDeFechas.filter(filterFilms);
+  console.log(filterFilmsFinal); */
+  //console.log(datosPeliculas);
   return datosPeliculas;
 }
