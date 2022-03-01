@@ -19,6 +19,8 @@ function addElemento(listaDePeliculas, datosDePeliculas) {
     //Cree una etiqueta de tipo imagen donde entrara cada poster de pelicula
     let poster = document.createElement("img");
     poster.setAttribute("src", datosDePeliculas[i]["poster"]);
+    poster.setAttribute("width", "200px");
+    poster.setAttribute("height", "286px");
     divPoster.appendChild(poster);
 
     // Cree un elemento h3 que tendra el nombre de cada pelicula
@@ -49,34 +51,8 @@ function addElemento(listaDePeliculas, datosDePeliculas) {
     divRt_score.innerHTML = "Score:" + datosDePeliculas[i]["rt_score"];
     divRt_score.setAttribute("class", "contenedorPuntaje");
     divMovieData.appendChild(divRt_score);
-
-    //Cree un elemento h3 que tendra los datos de cada pelicula año-director-puntaje
-    /*let movieData = document.createElement("h3");
-    movieData.innerHTML = datosDePeliculas[i];
-    divMovieData.appendChild(movieData);*/
   }
 }
-
-/*function addElemento(listaDePeliculas, datosDePeliculas) {
-  let movieList = document.getElementById("movieList");
-  for (let i = 0; i < listaDePeliculas.length; i++) {
-    let h3 = document.createElement("h3");
-    let p1 = document.createElement("p");
-    let p2 = document.createElement("p");
-    let p3 = document.createElement("p");
-    h3.innerHTML = listaDePeliculas[i];
-    for (let j = 0; j < datosDePeliculas.length; j++) {
-      p1.innerHTML = datosDePeliculas[j];
-      p2.innerHTML = datosDePeliculas[1];
-      p3.innerHTML = datosDePeliculas[2];
-    }
-    console.log(datosDePeliculas[i]);
-    movieList.appendChild(h3);
-    movieList.appendChild(p1);
-    movieList.appendChild(p2);
-    movieList.appendChild(p3);
-  }
-}*/
 
 addElemento(listaDePeliculas(), datosDePeliculas());
 

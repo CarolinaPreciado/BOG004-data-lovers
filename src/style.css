@@ -47,21 +47,25 @@ h2 {
   margin-right: 10%;
 }
 .contenedorDeFecha {
-  float: left;
   font-weight: bolder;
   text-align: center;
   color: #c6c191;
   font-size: 1.17em;
 }
 .contenedorDeDirector {
-  display: inline-block;
   font-weight: bolder;
   color: #c6c191;
   font-size: 1.17em;
 }
 .contenedorPuntaje {
-  float: right;
   font-weight: bolder;
   color: #c6c191;
   font-size: 1.17em;
+}
+.contenedorDeCadaPelicula {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  float: left;
 }
