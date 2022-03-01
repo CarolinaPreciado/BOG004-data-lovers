@@ -5,20 +5,31 @@ function addElemento(listaDePeliculas, datosDePeliculas) {
 
   for (let i = 0; i < listaDePeliculas.length; i++) {
     //Cree un div que va a contener a cada pelicula
-    let div = document.createElement("div");
-    div.setAttribute("id", "pelicula" + i);
-    div.setAttribute("class", "contenedorDeCadaPelicula");
-    movieList.appendChild(div);
+    let divEachMovie = document.createElement("div");
+    divEachMovie.setAttribute("id", "pelicula" + i);
+    divEachMovie.setAttribute("class", "contenedorDeCadaPelicula");
+    movieList.appendChild(divEachMovie);
+
+    //Cree un div que va a contener cada poster de pelicula
+    let divPoster = document.createElement("div");
+    divPoster.setAttribute("id", "posterDePelicula" + i);
+    divPoster.setAttribute("class", "contendorDePosters");
+    divEachMovie.appendChild(divPoster);
+
+    //Cree una etiqueta de tipo imagen donde entrara cada poster de pelicula
+    let poster = document.createElement("img");
+    poster.setAttribute("src", datosDePeliculas[i]["poster"]);
+    divPoster.appendChild(poster);
 
     // Cree un elemento h3 que tendra el nombre de cada pelicula
     let movieName = document.createElement("h3");
     movieName.innerHTML = listaDePeliculas[i];
-    div.appendChild(movieName);
+    divEachMovie.appendChild(movieName);
 
     //Cree otro div que va a contener cada dato capturado de la pelicula
     let divMovieData = document.createElement("div");
     divMovieData.setAttribute("class", "contenedorDeDatos");
-    div.appendChild(divMovieData);
+    divEachMovie.appendChild(divMovieData);
 
     //Cree un div que va a contener la fecha de estreno de la pelicula
     let divRelaseDate = document.createElement("div");
