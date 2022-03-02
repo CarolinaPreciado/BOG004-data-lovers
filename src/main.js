@@ -55,5 +55,3 @@ function addElemento(listaDePeliculas, datosDePeliculas) {
 }
 
 addElemento(listaDePeliculas(), datosDePeliculas());
-
-//datosDePeliculas();
