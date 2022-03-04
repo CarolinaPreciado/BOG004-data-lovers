@@ -1,9 +1,9 @@
-import { listaDePeliculas, datosDePeliculas } from "./data.js";
+import { datosDePeliculas } from "./data.js";
 
-function addElemento(listaDePeliculas, datosDePeliculas) {
+function addElemento(datosDePeliculas) {
   let movieList = document.getElementById("movieList");
 
-  for (let i = 0; i < listaDePeliculas.length; i++) {
+  for (let i = 0; i < datosDePeliculas.length; i++) {
     //Cree un div que va a contener a cada pelicula
     let divEachMovie = document.createElement("div");
     divEachMovie.setAttribute("id", "pelicula" + i);
@@ -25,7 +25,7 @@ function addElemento(listaDePeliculas, datosDePeliculas) {
 
     // Cree un elemento h3 que tendra el nombre de cada pelicula
     let movieName = document.createElement("h3");
-    movieName.innerHTML = listaDePeliculas[i];
+    movieName.innerHTML = datosDePeliculas[i]["title"];
     divEachMovie.appendChild(movieName);
 
     //Cree otro div que va a contener cada dato capturado de la pelicula
@@ -54,4 +54,4 @@ function addElemento(listaDePeliculas, datosDePeliculas) {
   }
 }
 
-addElemento(listaDePeliculas(), datosDePeliculas());
+addElemento(datosDePeliculas());
