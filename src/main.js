@@ -1,4 +1,4 @@
-import { datosDePeliculas } from "./data.js";
+import { datosDePeliculas, filtradoDeDirector } from "./data.js";
 
 function addElemento(datosDePeliculas) {
   let movieList = document.getElementById("movieList");
@@ -53,5 +53,28 @@ function addElemento(datosDePeliculas) {
     divMovieData.appendChild(divRt_score);
   }
 }
+function seleccionarDirector() {
+  let eleccionDeDirectores = document.getElementById("eleccionDeDirectores");
+  let directorElegido = eleccionDeDirectores.value;
+  console.log(directorElegido);
+  let dataFiltradaPorDirector = filtradoDeDirector(directorElegido);
+  console.log(dataFiltradaPorDirector);
+
+  //Declaro variable y hago un bucle para limpiar la pantalla
+  let limpiarPantalla = document.getElementsByClassName(
+    "contenedorDeCadaPelicula"
+  );
+  while (limpiarPantalla[0]) {
+    limpiarPantalla[0].parentNode.removeChild(limpiarPantalla[0]);
+  }
+
+  addElemento(dataFiltradaPorDirector);
+  //hacer el filtrado de la data, teniendo como parametro de entrada la funcion de datos de peliculas
+  // llamar a la funcion de filtrar y que la funcion de filtrar me retorne la data
+  //capturar la data en una nueva variable
+}
 
 addElemento(datosDePeliculas());
+document
+  .getElementById("eleccionDeDirectores")
+  .addEventListener("change", seleccionarDirector);

@@ -14,10 +14,10 @@ export function datosDePeliculas() {
   return datosPeliculas;
 }
 
-export function filtradoDeDirector1(data) {
-  if (data["director"] === "Hayao Miyazaki") return true;
-  else {
-  }
+export function filtradoDeDirector(director) {
+  let data = datosDePeliculas();
+  const filtroFinalDirector = data.filter(
+    (pelicula) => pelicula["director"] === director
+  );
+  return filtroFinalDirector;
 }
-const filtroFinalDirector1 = data["films"].filter(filtradoDeDirector1);
-console.log(filtroFinalDirector1);
