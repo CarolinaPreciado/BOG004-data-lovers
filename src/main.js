@@ -1,9 +1,9 @@
-import { listaDePeliculas, datosDePeliculas } from "./data.js";
+import { datosDePeliculas, filtradoDeDirector } from "./data.js";
 
-function addElemento(listaDePeliculas, datosDePeliculas) {
+function addElemento(datosDePeliculas) {
   let movieList = document.getElementById("movieList");
 
-  for (let i = 0; i < listaDePeliculas.length; i++) {
+  for (let i = 0; i < datosDePeliculas.length; i++) {
     //Cree un div que va a contener a cada pelicula
     let divEachMovie = document.createElement("div");
     divEachMovie.setAttribute("id", "pelicula" + i);
@@ -25,7 +25,7 @@ function addElemento(listaDePeliculas, datosDePeliculas) {
 
     // Cree un elemento h3 que tendra el nombre de cada pelicula
     let movieName = document.createElement("h3");
-    movieName.innerHTML = listaDePeliculas[i];
+    movieName.innerHTML = datosDePeliculas[i]["title"];
     divEachMovie.appendChild(movieName);
 
     //Cree otro div que va a contener cada dato capturado de la pelicula
@@ -53,5 +53,26 @@ function addElemento(listaDePeliculas, datosDePeliculas) {
     divMovieData.appendChild(divRt_score);
   }
 }
+//funcion para elegir director, leer su valor, filtrar la informacion y retornarla filtrada al usuario
+function seleccionarDirector() {
+  let eleccionDeDirectores = document.getElementById("eleccionDeDirectores");
+  let directorElegido = eleccionDeDirectores.value;
+  console.log(directorElegido);
+  let dataFiltradaPorDirector = filtradoDeDirector(directorElegido);
+  console.log(dataFiltradaPorDirector);
 
-addElemento(listaDePeliculas(), datosDePeliculas());
+  //Declaro variable y hago un bucle para limpiar la pantalla
+  let limpiarPantalla = document.getElementsByClassName(
+    "contenedorDeCadaPelicula"
+  );
+  while (limpiarPantalla[0]) {
+    limpiarPantalla[0].parentNode.removeChild(limpiarPantalla[0]);
+  }
+
+  addElemento(dataFiltradaPorDirector);
+}
+
+addElemento(datosDePeliculas());
+document
+  .getElementById("eleccionDeDirectores")
+  .addEventListener("change", seleccionarDirector);

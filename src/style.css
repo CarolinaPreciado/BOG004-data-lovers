@@ -69,3 +69,42 @@ h2 {
   margin-right: 2%;
   float: left;
 }
+.content-input input,
+.content-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.content-select select::-ms-expand {
+  display: none;
+}
+.content-select {
+  display: flex;
+  max-width: 250px;
+  position: relative;
+  margin-top: -54px;
+  margin-left: 900px;
+}
+.content-select select {
+  display: inline-block;
+  width: 85%;
+  cursor: pointer;
+  padding: 7px 15px;
+  height: 40px;
+  outline: 0;
+  border: 0;
+  border-radius: 40px;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  position: relative;
+  transition: all 0.25s ease;
+}
+.content-select select:hover {
+  background: #ffffff;
+}
+.content-select img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  margin-left: 160px;
+}

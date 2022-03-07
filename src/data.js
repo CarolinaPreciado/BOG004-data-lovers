@@ -1,13 +1,5 @@
 import data from "./data/ghibli/ghibli.js";
 
-export function listaDePeliculas() {
-  let peliculas = [];
-  for (let i = 0; i < data["films"].length; i++) {
-    peliculas.push(data["films"][i]["title"]);
-  }
-  return peliculas;
-}
-
 export function datosDePeliculas() {
   let datosPeliculas = [];
   for (let i = 0; i < data["films"].length; i++) {
@@ -20,4 +12,12 @@ export function datosDePeliculas() {
     });
   }
   return datosPeliculas;
+}
+
+export function filtradoDeDirector(director) {
+  let data = datosDePeliculas();
+  const filtroFinalDirector = data.filter(
+    (pelicula) => pelicula["director"] === director
+  );
+  return filtroFinalDirector;
 }
