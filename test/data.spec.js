@@ -1,36 +1,5 @@
 import { describe } from "eslint/lib/rule-tester/rule-tester";
-import { listaDePeliculas, datosDePeliculas } from "../src/data";
-
-describe("listaDePeliculas", () => {
-  it("is a function", () => {
-    expect(typeof listaDePeliculas).toBe("function");
-  });
-  it("returns `lista de peliculas`", () => {
-    let peliculas = [
-      "Castle in the Sky",
-      "My Neighbor Totoro",
-      "Kiki's Delivery Service",
-      "Grave of the Fireflies",
-      "Only Yesterday",
-      "Porco Rosso",
-      "Pom Poko",
-      "Whisper of the Heart",
-      "Princess Mononoke",
-      "My Neighbors the Yamadas",
-      "Spirited Away",
-      "The Cat Returns",
-      "Howl's Moving Castle",
-      "Tales from Earthsea",
-      "Ponyo on the Cliff by the Sea",
-      "The Secret World of Arrietty",
-      "From Up on Poppy Hill",
-      "The Wind Rises",
-      "The Tale of the Princess Kaguya",
-      "When Marnie Was There",
-    ];
-    expect(listaDePeliculas()).toStrictEqual(peliculas);
-  });
-});
+import { datosDePeliculas, filtradoDeDirector } from "../src/data";
 
 describe("datosDePeliculas", () => {
   it("is a function", () => {
@@ -38,5 +7,44 @@ describe("datosDePeliculas", () => {
   });
   it("returns `datosDePeliculas`", () => {
     expect(typeof datosDePeliculas()).toBe("object");
+  });
+});
+
+describe("filtradoDeDirector", () => {
+  it("is a function", () => {
+    expect(typeof filtradoDeDirector).toBe("function");
+  });
+  it("returns `filtradoDeDirector`", () => {
+    expect(typeof filtradoDeDirector()).toBe("object");
+  });
+  describe("Matchers Arrays", () => {
+    test("Hiroyuki Morita existe en el array", () => {
+      let director = "Hiroyuki Morita";
+      expect(filtradoDeDirector(director)[0].director).toContain(director);
+    });
+    test("El array director Hayao Miyazaki tiene 9 elementos", () => {
+      let director = "Hayao Miyazaki";
+      expect(filtradoDeDirector(director)).toHaveLength(9);
+    });
+    test("El array director Isao Takahata tiene 5 elementos", () => {
+      let director = "Isao Takahata";
+      expect(filtradoDeDirector(director)).toHaveLength(5);
+    });
+    test("El array director Yoshifumi Kondō tiene 1 elemento", () => {
+      let director = "Yoshifumi Kondō";
+      expect(filtradoDeDirector(director)).toHaveLength(1);
+    });
+    test("El array director Hiroyuki Morita tiene 1 elemento", () => {
+      let director = "Hiroyuki Morita";
+      expect(filtradoDeDirector(director)).toHaveLength(1);
+    });
+    test("El array director Gorō Miyazaki tiene 2 elementos", () => {
+      let director = "Gorō Miyazaki";
+      expect(filtradoDeDirector(director)).toHaveLength(2);
+    });
+    test("El array director Hiromasa Yonebayashi tiene 2 elementos", () => {
+      let director = "Hiromasa Yonebayashi";
+      expect(filtradoDeDirector(director)).toHaveLength(2);
+    });
   });
 });

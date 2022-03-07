@@ -53,6 +53,7 @@ function addElemento(datosDePeliculas) {
     divMovieData.appendChild(divRt_score);
   }
 }
+//funcion para elegir director, leer su valor, filtrar la informacion y retornarla filtrada al usuario
 function seleccionarDirector() {
   let eleccionDeDirectores = document.getElementById("eleccionDeDirectores");
   let directorElegido = eleccionDeDirectores.value;
@@ -69,9 +70,6 @@ function seleccionarDirector() {
   }
 
   addElemento(dataFiltradaPorDirector);
-  //hacer el filtrado de la data, teniendo como parametro de entrada la funcion de datos de peliculas
-  // llamar a la funcion de filtrar y que la funcion de filtrar me retorne la data
-  //capturar la data en una nueva variable
 }
 
 addElemento(datosDePeliculas());
