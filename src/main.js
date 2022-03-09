@@ -76,3 +76,5 @@ addElemento(datosDePeliculas());
 document
   .getElementById("eleccionDeDirectores")
   .addEventListener("change", seleccionarDirector);
+
+//funcion para elegir el dato a ordenar, leer su valor, ordenar la informacion y retornarla ordenada al usuario

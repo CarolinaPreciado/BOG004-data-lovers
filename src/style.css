@@ -78,16 +78,9 @@ h2 {
 .content-select select::-ms-expand {
   display: none;
 }
-/*.content-select {
-  display: flex;
-  max-width: 250px;
-  position: relative;
-  margin-top: -54px;
-  margin-left: 900px;
-}*/
 .content-select select {
   display: inline-block;
-  width: 85%;
+  width: 90%;
   cursor: pointer;
   padding: 7px 15px;
   height: 40px;
@@ -96,26 +89,16 @@ h2 {
   border-radius: 40px;
   font-size: 1em;
   color: rgb(0, 0, 0);
-  /*position: relative;*/
   transition: all 0.25s ease;
 }
 .content-select select:hover {
   background: #ffffff;
 }
-/*.content-select img {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  margin-left: 210px;
-}*/
 #filtrado {
   max-width: 250px;
   position: absolute;
-  /*margin-top: 54px;
-  margin-left: -90px;*/
   width: 100%;
   height: 40px;
-  /*margin-left: -480px;*/
   margin-left: 750px;
 }
 #filtrado img {
@@ -127,11 +110,8 @@ h2 {
 #ordenado {
   max-width: 250px;
   position: absolute;
-  /*margin-top: 54px;
-  margin-left: -90px;*/
   width: 100%;
   height: 40px;
-  /*margin-left: -480px;*/
   margin-left: -680px;
 }
 #ordenado img {

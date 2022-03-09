@@ -22,25 +22,40 @@ export function filtradoDeDirector(director) {
   return filtroFinalDirector;
 }
 //funcion para ordenar datos por fecha de lanzamiento
-let datosParaOrdenadoFecha = datosDePeliculas();
+export function ordenadoFecha() {
+  let datosParaOrdenadoFecha = datosDePeliculas();
 
-datosParaOrdenadoFecha.sort((a, b) => {
-  return a.release_date - b.release_date;
-});
-console.log(datosParaOrdenadoFecha);
+  datosParaOrdenadoFecha.sort((a, b) => {
+    return b.release_date - a.release_date;
+  });
+  console.log(datosParaOrdenadoFecha);
+}
+ordenadoFecha();
 
 //funcion para ordenar datos por puntaje
-let datosParaOrdenadoPuntaje = datosDePeliculas();
+export function ordenadoPuntaje() {
+  let datosParaOrdenadoPuntaje = datosDePeliculas();
 
-datosParaOrdenadoPuntaje.sort((a, b) => {
-  return b.rt_score - a.rt_score;
-});
-console.log(datosParaOrdenadoPuntaje);
+  datosParaOrdenadoPuntaje.sort((a, b) => {
+    return b.rt_score - a.rt_score;
+  });
+  console.log(datosParaOrdenadoPuntaje);
+}
+ordenadoPuntaje();
 
-/*//funcion para ordenar datos por A-Z
-let datosParaOrdenadoAZ = datosDePeliculas();
+//funcion para ordenar datos por A-Z
+export function ordenarAZ() {
+  let datosParaOrdenadoAZ = datosDePeliculas();
 
-datosParaOrdenadoAZ.sort((a, b) => {
-  return a.title - b.title;
-});
-console.log(datosParaOrdenadoAZ);*/
+  datosParaOrdenadoAZ.sort((a, b) => {
+    if (a.title == b.title) {
+      return 0;
+    }
+    if (a.title < b.title) {
+      return -1;
+    }
+    return 1;
+  });
+  console.log(datosParaOrdenadoAZ);
+}
+ordenarAZ();
