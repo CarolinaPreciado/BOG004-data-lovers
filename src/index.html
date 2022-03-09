@@ -19,23 +19,28 @@
     </div>
   </header>
   <div class="flex-container movie-list">
+    <div class="content-select" id="ordenado">
+      <select id="filtradoDeDatos">
+        <option disabled selected>Sort by:</option>
+        <option value="Release date">Release date</option>
+        <option value="Score">Score</option>
+      </select>
+      <img class="icon" src="imagenes/sort.png">
+    </div>
     <img src="imagenes/imag.png">
     <h2>Movie list</h2>
-  </div>
-  <div class="content-select">
-    <select id="eleccionDeDirectores">
-      <option disabled selected>Filtrar por director:</option>
-      <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-      <option value="Isao Takahata">Isao Takahata</option>
-      <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-      <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-      <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-      <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-    </select>
-    <img class="icon" src="imagenes/edit.png">
-  </div>
-  <div>
-    <br>
+    <div class="content-select" id="filtrado">
+      <select id="eleccionDeDirectores">
+        <option disabled selected>Filter by director:</option>
+        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+        <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+        <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+      </select>
+      <img class="icon" src="imagenes/edit.png">
+    </div>
   </div>
   <div class="movie_list centrar_contenido" id="movieList">
 

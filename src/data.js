@@ -21,3 +21,26 @@ export function filtradoDeDirector(director) {
   );
   return filtroFinalDirector;
 }
+//funcion para ordenar datos por fecha de lanzamiento
+let datosParaOrdenadoFecha = datosDePeliculas();
+
+datosParaOrdenadoFecha.sort((a, b) => {
+  return a.release_date - b.release_date;
+});
+console.log(datosParaOrdenadoFecha);
+
+//funcion para ordenar datos por puntaje
+let datosParaOrdenadoPuntaje = datosDePeliculas();
+
+datosParaOrdenadoPuntaje.sort((a, b) => {
+  return b.rt_score - a.rt_score;
+});
+console.log(datosParaOrdenadoPuntaje);
+
+/*//funcion para ordenar datos por A-Z
+let datosParaOrdenadoAZ = datosDePeliculas();
+
+datosParaOrdenadoAZ.sort((a, b) => {
+  return a.title - b.title;
+});
+console.log(datosParaOrdenadoAZ);*/
