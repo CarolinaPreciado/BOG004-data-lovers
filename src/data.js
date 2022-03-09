@@ -28,9 +28,9 @@ export function ordenadoFecha() {
   datosParaOrdenadoFecha.sort((a, b) => {
     return b.release_date - a.release_date;
   });
-  console.log(datosParaOrdenadoFecha);
+  return datosParaOrdenadoFecha;
+  // console.log(datosParaOrdenadoFecha);
 }
-ordenadoFecha();
 
 //funcion para ordenar datos por puntaje
 export function ordenadoPuntaje() {
@@ -39,12 +39,12 @@ export function ordenadoPuntaje() {
   datosParaOrdenadoPuntaje.sort((a, b) => {
     return b.rt_score - a.rt_score;
   });
-  console.log(datosParaOrdenadoPuntaje);
+  return datosParaOrdenadoPuntaje;
+  //console.log(datosParaOrdenadoPuntaje);
 }
-ordenadoPuntaje();
 
 //funcion para ordenar datos por A-Z
-export function ordenarAZ() {
+export function ordenadoAZ() {
   let datosParaOrdenadoAZ = datosDePeliculas();
 
   datosParaOrdenadoAZ.sort((a, b) => {
@@ -56,6 +56,6 @@ export function ordenarAZ() {
     }
     return 1;
   });
-  console.log(datosParaOrdenadoAZ);
+  return datosParaOrdenadoAZ;
+  //console.log(datosParaOrdenadoAZ);
 }
-ordenarAZ();

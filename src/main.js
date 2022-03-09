@@ -1,4 +1,10 @@
-import { datosDePeliculas, filtradoDeDirector } from "./data.js";
+import {
+  datosDePeliculas,
+  filtradoDeDirector,
+  ordenadoFecha,
+  ordenadoPuntaje,
+  ordenadoAZ,
+} from "./data.js";
 
 function addElemento(datosDePeliculas) {
   let movieList = document.getElementById("movieList");
@@ -68,13 +74,43 @@ function seleccionarDirector() {
   while (limpiarPantalla[0]) {
     limpiarPantalla[0].parentNode.removeChild(limpiarPantalla[0]);
   }
-
+  //Pintado de los elementos en la pantalla luego de seleccionar director
   addElemento(dataFiltradaPorDirector);
 }
-
+//llamado de la funcion de pintado en la pantalla inicial
 addElemento(datosDePeliculas());
+
+//Creado de evento para llamar la funcion de seleccionado de director
 document
   .getElementById("eleccionDeDirectores")
   .addEventListener("change", seleccionarDirector);
 
 //funcion para elegir el dato a ordenar, leer su valor, ordenar la informacion y retornarla ordenada al usuario
+function ordenar() {
+  let ordenarDato = document.getElementById("ordenadoDeDatos");
+  let datoElegido = ordenarDato.value;
+  console.log(datoElegido);
+
+  let datosOrdenados = [];
+  if (datoElegido === "Release date") {
+    datosOrdenados = ordenadoFecha();
+  }
+  if (datoElegido === "Score") {
+    datosOrdenados = ordenadoPuntaje();
+  }
+  if (datoElegido === "AZ") {
+    datosOrdenados = ordenadoAZ();
+  }
+  console.log(datosOrdenados);
+  //Declaro variable y hago un bucle para limpiar la pantalla
+  let limpiarPantalla = document.getElementsByClassName(
+    "contenedorDeCadaPelicula"
+  );
+  while (limpiarPantalla[0]) {
+    limpiarPantalla[0].parentNode.removeChild(limpiarPantalla[0]);
+  }
+  //Pintado de los elementos en la paantalla luego de seleccionar el elemento a ordenar
+  addElemento(datosOrdenados);
+}
+//Creado de evento para llamar la funcion de ordenar dato elegido
+document.getElementById("ordenadoDeDatos").addEventListener("change", ordenar);
