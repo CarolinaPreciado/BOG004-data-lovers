@@ -121,3 +121,14 @@ h2 {
   position: absolute;
   margin-left: -60px;
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #d6eaf8;
+  opacity: 70%;
+  justify-content: center;
+  height: 40px;
+  margin-top: 40px;
+  align-items: center;
+  color: #000000;
+}
