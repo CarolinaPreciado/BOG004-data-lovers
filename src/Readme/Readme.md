@@ -131,59 +131,59 @@ Yo como usuario de la página, quiero ordenar las películas por fecha de lanzam
 
  Listado de las películas.
 
-![Prototipo de baja fidelidad | Historia de usuario 1](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%201.PNG?raw=true)
+![Prototipo de baja fidelidad | Historia de usuario 1](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%201.PNG)
 
 ### Prototipo de alta fidelidad para: Historia de usuario 1 
 
-![Prototipo de alta fidelidad | Historia de usuario 1](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%201.PNG?raw=true)
+![Prototipo de alta fidelidad | Historia de usuario 1](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%201.PNG)
 
 ### Prototipo de baja fidelidad para: Historia de usuario 2
 
 Datos bajo la lista.
 
-![Prototipo de baja fidelidad | Historia de usuario 2](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%202.PNG?raw=true)
+![Prototipo de baja fidelidad | Historia de usuario 2](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%202.PNG)
 
 ### Prototipo de alta fidelidad para: Historia de usuario 2 
 
-![Prototipo de alta fidelidad | Historia de usuario 2](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%202.PNG?raw=true)
+![Prototipo de alta fidelidad | Historia de usuario 2](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%202.PNG)
 
 ### Prototipo de baja fidelidad para: Historia de usuario 3
 
  Poster promocional.
 
-![Prototipo de baja fidelidad | Historia de usuario 3](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%203.PNG?raw=true)
+![Prototipo de baja fidelidad | Historia de usuario 3](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%203.PNG)
 
 ### Prototipo de alta fidelidad para: Historia de usuario 3 
 
-![Prototipo de alta fidelidad | Historia de usuario 3](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%203.PNG?raw=true)
+![Prototipo de alta fidelidad | Historia de usuario 3](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%203.PNG)
 
 ### Prototipo de baja fidelidad para: Historia de usuario 4
 
 Filtrar.
 
-![Prototipo de baja fidelidad | Historia de usuario 4](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%204.PNG?raw=true)
+![Prototipo de baja fidelidad | Historia de usuario 4](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%204.PNG)
 
 ### Prototipo de alta fidelidad para: Historia de usuario 4 lista desplegable cerrada
 
-![Prototipo de alta fidelidad | Historia de usuario 4 lista desplegable cerrada](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%204.PNG?raw=true)
+![Prototipo de alta fidelidad | Historia de usuario 4 lista desplegable cerrada](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%204.PNG)
 
 ### Prototipo de alta fidelidad para: Historia de usuario 4 lista desplegable abierta
 
-![Prototipo de alta fidelidad | Historia de usuario 4 lista desplegable abierta](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%204.1.PNG?raw=true)
+![Prototipo de alta fidelidad | Historia de usuario 4 lista desplegable abierta](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%204.1.PNG)
 
 ### Prototipo de baja fidelidad para: Historia de usuario 5
 
 Ordenar.
 
-![Prototipo de baja fidelidad | Historia de usuario 5](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%205.PNG?raw=true)
+![Prototipo de baja fidelidad | Historia de usuario 5](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20baja%20fidelidad%20-%20historia%205.PNG)
 
 ### Prototipo de alta fidelidad para: Historia de usuario 5 lista desplegable cerrada
 
-![Prototipo de alta fidelidad | Historia de usuario 5 lista desplegable cerrada](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%205.PNG?raw=true)
+![Prototipo de alta fidelidad | Historia de usuario 5 lista desplegable cerrada](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%205.PNG)
 
 ### Prototipo de alta fidelidad para: Historia de usuario 5 lista desplegable abierta
 
-![Prototipo de alta fidelidad | Historia de usuario 5 lista desplegable abierta](https://github.com/CarolinaPreciado/BOG004-data-lovers/blob/Readme/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%205.1.PNG?raw=true)
+![Prototipo de alta fidelidad | Historia de usuario 5 lista desplegable abierta](https://raw.githubusercontent.com/CarolinaPreciado/BOG004-data-lovers/main/src/Readme/imgReadme/Prototipo%20de%20alta%20fidelidad%20-%20historia%205.1.PNG)
 
 ## Enlace a la pagina 
 
